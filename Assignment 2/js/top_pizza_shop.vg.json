@@ -3,7 +3,7 @@
     "width": 400,
     "height": 450,
     "data": {
-        "url": "../data/top_pizza_shop.csv"
+        "url": "https://raw.githubusercontent.com/TanJefman2/tanjefman2.github.io/main/Assignment%202/data/top_pizza_shop.csv"
     },
     "mark": "bar",
     "encoding": {
