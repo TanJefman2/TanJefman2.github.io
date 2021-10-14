@@ -3,7 +3,7 @@
     "width": 1500,
     "height": 250,
     "data": {
-        "url": "../data/pizza_count_by_state.csv"
+        "url": "https://raw.githubusercontent.com/TanJefman2/tanjefman2.github.io/main/Assignment%202/data/pizza_count_by_state.csv"
     },
     "config": {"background": "aliceblue"},
     "layer": [{
