@@ -24,6 +24,13 @@
                 "type": "quantitative",
                 "title": "Number of Pizza Shops"
             },
+            "color":{
+                "field": "restaurant_count",
+                "type": "quantitative",
+                "scale": {"type": "log",
+                    "domain": [1, 10, 100],
+                    "range": ["#e4b455", "#b4000f", "#770d15"]}
+            },
             "tooltip": [
               {"field": "province", "type": "nominal", "title": "State"},
               {"field": "restaurant_count", "type": "quantitative", "title": "Number of Pizzas Shop"}

@@ -5,6 +5,7 @@
     "data": {
         "url": "https://raw.githubusercontent.com/TanJefman2/tanjefman2.github.io/main/Assignment%202/data/top_pizza_shop.csv"
     },
+    "config": {"background": "aliceblue"},
     "mark": "bar",
     "encoding": {
         "x": {
@@ -24,7 +25,15 @@
         "tooltip": [
           {"field": "restaurant", "type": "nominal", "title": "Pizza Shop"},
           {"field": "count", "type": "quantitative", "title": "Number of Pizzas Shop"}
-        ]
+        ],
+        "color":{
+            "field": "restaurant",
+            "type": "nominal",
+            "scale": {
+                "domain": ["Papa John's Pizza","Little Caesar's Pizza", "Papa Murphy's Pizza","Johnny's Pizza","Hungry Howie's Pizza","Sbarro","Pizza Hut","LaRosa's Pizzeria"],
+                "range": ["#770d15", "#b4000f", "#e4b455","#d3b786","#886839","#58483a","#597718","#90a74c"]}
+                
+        }
         
     }
 }
