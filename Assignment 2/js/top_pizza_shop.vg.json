@@ -33,7 +33,10 @@
                 "domain": ["Papa John's Pizza","Little Caesar's Pizza", "Papa Murphy's Pizza","Johnny's Pizza","Hungry Howie's Pizza","Sbarro","Pizza Hut","LaRosa's Pizzeria"],
                 "range": ["#770d15", "#b4000f", "#e4b455","#d3b786","#886839","#58483a","#597718","#90a74c"]}
                 
-        }
+        },
+    "transform": [{
+      "filter": "datum.restaurant != ''"
+    }]
         
     }
 }
