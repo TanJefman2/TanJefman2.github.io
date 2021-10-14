@@ -3,7 +3,7 @@
   "width": 700,
   "height": 250,
   "data": {
-    "url": "../data/type_of_pizza_price_per_city.csv"
+    "url": "https://raw.githubusercontent.com/TanJefman2/tanjefman2.github.io/main/Assignment%202/data/type_of_pizza_price_per_city.csv"
   },
   "transform": [{
     "filter": "datum.city == 'New York' || datum.city == 'Los Angeles' ||datum.city == 'Chicago' ||datum.city == 'Houston' ||datum.city == 'Philadelphia' ||datum.city == 'San Antonio' "
