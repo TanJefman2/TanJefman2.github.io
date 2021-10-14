@@ -33,7 +33,7 @@
           "param": "click"
         }
       }],
-      "width": 900,
+      "width": 1000,
       "height": 500,
       "layer": [{
         "mark": {
@@ -84,7 +84,7 @@
           {"aggregate": "mean","field": "price", "type": "nominal", "title": "Average Price"}
         ]
       },
-      "width": 900,
+      "width": 1000,
       "mark": "bar",
       "params": [{
         "name": "click",
