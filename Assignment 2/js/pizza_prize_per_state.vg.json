@@ -47,7 +47,7 @@
               "field": "pizza_type",
               "scale": {
                 "domain": ["margherita", "hawaiian", "pepperoni", "meat", "veggie", "cheese", "buffalo", "bbq chicken"],
-                "range": ["#f9d5e5", "#eeac99", "#996377", "#c83349", "#5b9aa0", "#d6d4e0", "#b8a9c9", "#622569"]
+                "range": ["#886839", "#d3b786", "#597718", "#58483a", "#90a74c", "#e4b455", "#b4000f", "#770d15"]
               }
             },
             "value": "lightgray"
@@ -64,7 +64,7 @@
             "field": "pizza_type",
             "scale": {
               "domain": ["margherita", "hawaiian", "pepperoni", "meat", "veggie", "cheese", "buffalo", "bbq chicken"],
-              "range": ["#f9d5e5", "#eeac99", "#996377", "#c83349", "#5b9aa0", "#d6d4e0", "#b8a9c9", "#622569"]
+              "range": ["#886839", "#d3b786", "#597718", "#58483a", "#90a74c", "#e4b455", "#b4000f", "#770d15"]
             }
           },
           "value": "lightgray"
