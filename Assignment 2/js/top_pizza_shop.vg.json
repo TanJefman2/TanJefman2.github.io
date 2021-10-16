@@ -5,38 +5,89 @@
     "data": {
         "url": "https://raw.githubusercontent.com/TanJefman2/tanjefman2.github.io/main/Assignment%202/data/top_pizza_shop.csv"
     },
-    "config": {"background": "aliceblue"},
-    "mark": "bar",
-    "encoding": {
-        "x": {
-            "field": "restaurant",
-            "type": "nominal",
-            "axis": {
-                "labelAngle": -45
+    "config": {
+        "background": "aliceblue"
+    },
+    "layer": [{
+        "mark": "bar",
+        "encoding": {
+            "x": {
+                "field": "restaurant",
+                "type": "nominal",
+                "axis": {
+                    "labelAngle": -45
+                },
+                "sort": ["B", "A", "C"],
+                "title": "Pizza Shops"
             },
-            "sort": ["B", "A", "C"],
-            "title": "Pizza Shops"
+            "y": {
+                "field": "count",
+                "type": "quantitative",
+                "title": "Number of Pizza Shops"
+            },
+            "tooltip": [{
+                    "field": "restaurant",
+                    "type": "nominal",
+                    "title": "Pizza Shop"
+                },
+                {
+                    "field": "count",
+                    "type": "quantitative",
+                    "title": "Number of Pizzas Shop"
+                }
+            ],
+            "color": {
+                "field": "restaurant",
+                "type": "nominal",
+                "title": "Restaurants",
+                "scale": {
+                    "domain": ["Papa John's Pizza", "Little Caesar's Pizza", "Papa Murphy's Pizza", "Johnny's Pizza", "Hungry Howie's Pizza", "Sbarro", "Pizza Hut", "LaRosa's Pizzeria"],
+                    "range": ["#770d15", "#b4000f", "#e4b455", "#d3b786", "#886839", "#58483a", "#597718", "#90a74c"]
+                }
+
+            }
+
         },
-        "y": {
-            "field": "count",
-            "type": "quantitative",
-            "title": "Number of Pizza Shops"
+        "transform": [{
+            "filter": "datum.restaurant != ''"
+        }]
+    },
+    {
+        "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "middle",
+            "dx": 25,
+            "dy":15,
+            "fontStyle": "bold"
         },
-        "tooltip": [
-          {"field": "restaurant", "type": "nominal", "title": "Pizza Shop"},
-          {"field": "count", "type": "quantitative", "title": "Number of Pizzas Shop"}
+        "transform": [{
+                "filter": "datum.count == 70"
+            },
+            {
+                "calculate": "'Papa Johns Pizza has the highest number of pizza shops'",
+                "as": "OriginInitial"
+            }
         ],
-        "color":{
-            "field": "restaurant",
-            "type": "nominal",
-            "scale": {
-                "domain": ["Papa John's Pizza","Little Caesar's Pizza", "Papa Murphy's Pizza","Johnny's Pizza","Hungry Howie's Pizza","Sbarro","Pizza Hut","LaRosa's Pizzeria"],
-                "range": ["#770d15", "#b4000f", "#e4b455","#d3b786","#886839","#58483a","#597718","#90a74c"]}
-                
-        },
-    "transform": [{
-      "filter": "datum.restaurant != ''"
+        "encoding": {
+            "x": {
+                "field": "restaurant",
+                "type": "nominal",
+                "axis": {
+                    "labelAngle": -45
+                },
+                "sort": ["B", "A", "C"],
+                "title": "Pizza Shops"
+            },
+            "y": {
+                "field": "count",
+                "type": "quantitative",
+                "title": "Number of Pizza Shops"
+            },
+            "text": {
+                "field": "OriginInitial",
+                "type": "nominal"
+            }
+        }
     }]
-        
-    }
 }
